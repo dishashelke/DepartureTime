@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<script type="text/javascript" src="location.js"></script>
+<title>SF Public Transportation</title>
+</head>
+<body>
+	<form name="mainform" action="NearestStops"
+		onsubmit="return validateForm()" method="GET">
+		<center>
+			<p id="message" />
+			<br>
+			<table>
+				<tr height="50">
+					<th colspan="2">SF Public Transportation</th>
+				</tr>
+				<tr height="50">
+					<td>Latitude:</td>
+					<td><input type="text" name="latitude" id="latitude">
+					</td>
+				</tr>
+				<tr height="50">
+					<td>Longitude:</td>
+					<td><input type="text" name="longitude" id="longitude">
+					</td>
+				</tr>
+
+				<tr height="50">
+					<td align="center"><input type="submit"
+						value="Get Nearby Stops" name="button" />
+					<td align="center"><button type="button"
+							onclick="getLocation()">Get Location</button></td>
+				</tr>
+			</table>
+		</center>
+	</form>
+</body>
+</html>
